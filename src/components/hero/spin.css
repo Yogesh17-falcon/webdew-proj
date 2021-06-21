@@ -1,0 +1,370 @@
+.Iam {
+  /* padding: 2em 5em; */
+  /* font: normal 40px/50px Montserrat, sans-serif; */
+  color: #999;
+}
+/* .Iam p {
+    height: 50px;
+    float: left;
+    margin-right: 0.3em;
+  } */
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 20px;
+  /* z-index: 1; */
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: #3cb1e7;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+  /*animation*/
+  -webkit-animation: move 5s;
+  -moz-animation: move 5s;
+  -ms-animation: move 5s;
+  -o-animation: move 5s;
+  animation: move 5s;
+  /*animation-iteration-count*/
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  /*animation-delay*/
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@-moz-keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@-o-keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+
+/**************Card**************/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700,300);
+
+/* * {
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+}
+
+html {
+    height: 100%;
+    min-height: 500px;
+} */
+.bodyCard {
+  height: 100%;
+  min-height: 500px;
+  /* background-color: #ECF0F1; */
+
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  -ms-flex-pack: center;
+  flex-pack: center;
+
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+
+.business-card {
+  position: relative;
+  width: 427px;
+  height: 320px;
+  margin: auto;
+  background-color: #2c3e50;
+
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.4);
+}
+.hover {
+  margin-top: 5px;
+  font-family: "Roboto Slab", sans-serif;
+  color: #646464;
+}
+.front {
+  width: 100%;
+  height: 100%;
+  background-color: #e74c3c;
+}
+.front img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rotate-left {
+  display: block;
+  position: absolute;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 60px;
+  color: #ecf0f1;
+  width: 300px;
+  height: 170px;
+  padding-left: 20px;
+  left: 20px;
+
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+
+  -webkit-transform: rotate(-90deg) translateX(-320px);
+  -moz-transform: rotate(-90deg) translateX(-320px);
+  -ms-transform: rotate(-90deg) translateX(-320px);
+  -o-transform: rotate(-90deg) translateX(-320px);
+  transform: rotate(-90deg) translateX(-320px);
+}
+
+.rotate-right {
+  display: block;
+  position: absolute;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 60px;
+  color: #ecf0f1;
+  width: 300px;
+  height: 170px;
+  padding-left: 20px;
+  left: -20px;
+
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+
+  -webkit-transform: rotate(90deg) translateY(-427px);
+  -moz-transform: rotate(90deg) translateY(-427px);
+  -ms-transform: rotate(90deg) translateY(-427px);
+  -o-transform: rotate(90deg) translateY(-427px);
+  transform: rotate(90deg) translateY(-427px);
+}
+
+.blue {
+  background-color: #2c3e50;
+  width: 50%;
+  height: 320px;
+}
+
+.back {
+  position: absolute;
+  display: block;
+  background-color: #2c3e50;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.back:hover {
+  opacity: 1;
+}
+
+.back h2 {
+  position: absolute;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 30px;
+  color: #e74c3c;
+  text-align: center;
+  /* padding-left: 38.5px; */
+  padding-left: 38.5px;
+  width: 400px;
+  margin: auto;
+  top: 70px;
+  /* padding-bottom: 20px; */
+}
+.back ul {
+  position: absolute;
+  display: block;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 25px;
+  color: #ecf0f1;
+  list-style: none;
+  padding-left: 38.5px;
+  bottom: 70px;
+}
+.back ul a {
+  color: #ecf0f1;
+  text-decoration: none;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.back ul a:hover {
+  color: #e74c3c;
+}
+
+.info {
+  position: fixed;
+  left: 30px;
+  top: 30px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  color: #e74c3c;
+  cursor: pointer;
+}
+.info:hover {
+  color: #3498db;
+}
+
+.close {
+  display: block;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  color: #e74c3c;
+  width: 100px;
+  padding-left: 30px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+#overlay {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  z-index: 20;
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.1);
+  box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.1);
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+#overlay p {
+  display: block;
+  padding-left: 30px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #2c3e50;
+}
+#overlay p a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+#overlay p a:hover {
+  color: #3498db;
+}
+
